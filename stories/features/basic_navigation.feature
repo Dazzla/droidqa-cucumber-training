@@ -6,7 +6,3 @@ Feature: Basic Navigation
     Given I am on the links page
     When I click the 'more information' link
     Then I should see "IANA" on the page
-
-
-
-

@@ -7,7 +7,7 @@ When(/^I click the 'more information' link$/) do
 end
 
 Then(/^I should see "IANA"/) do
-  (on LinksPage).html.should include "This is a linked page"
+  (on LinksPage).html.should include 'This is a linked page'
 end
 
 Given(/^I am on the forms page$/) do
@@ -15,9 +15,9 @@ Given(/^I am on the forms page$/) do
 end
 
 When(/^I submit the form$/) do
-  (on FormsPage).submit_form("A username")
+  (on FormsPage).submit_form('A username')
 end
 
 Then(/^I see the username displayed$/) do
-  (on FormsPage).check_content_is_displayed("Your username is: A username")
+  (on FormsPage).check_content_is_displayed('Your username is: A username')
 end

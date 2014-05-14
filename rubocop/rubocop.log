@@ -1,0 +1,13 @@
+Inspecting 6 files
+.CC...
+
+Offenses:
+
+stories/features/step_definitions/example_steps.rb:1:1: C: Carriage return character detected.
+Given(/^I am on the links page$/) do
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+stories/features/support/env.rb:1:1: C: Carriage return character detected.
+require 'watir-webdriver'
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+6 files inspected, 2 offenses detected
