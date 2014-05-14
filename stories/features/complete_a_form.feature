@@ -5,6 +5,6 @@ Feature: Complete A Form
 
   @this
   Scenario: Complete Form
-    Given I am on the w3schools forms page
+    Given I am on the forms page
     When I submit the form
     Then I see the username displayed

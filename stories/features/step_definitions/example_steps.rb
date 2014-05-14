@@ -1,29 +1,23 @@
-Given(/^I am on the example page$/) do
-  @browser = Watir::Browser.new
-  @browser.goto "file://#{HTML_DIR}/links.html"
+Given(/^I am on the links page$/) do
+  (visit LinksPage)
 end
 
 When(/^I click the 'more information' link$/) do
-  link = @browser.link(:id=>'basic_link')
-  link.click
+  (on LinksPage).basic_link
 end
 
 Then(/^I should see "IANA"/) do
-  @browser.html.should include "This is a linked page"
-  @browser.close
+  (on LinksPage).html.should include "This is a linked page"
 end
 
-Given(/^I am on the w3schools forms page$/) do
-  @browser = Watir::Browser.new
-  @browser.goto "file://#{HTML_DIR}/forms.html"
+Given(/^I am on the forms page$/) do
+  (visit FormsPage)
 end
 
 When(/^I submit the form$/) do
-  @browser.text_field(:id => "user_name").set "A username"
-  @browser.input(:id => 'submit_button').click
+  (on FormsPage).submit_form("A username")
 end
 
 Then(/^I see the username displayed$/) do
-  @browser.text.should include "Your username is: A username"
-  @browser.close
+  (on FormsPage).check_content_is_displayed("Your username is: A username")
 end
