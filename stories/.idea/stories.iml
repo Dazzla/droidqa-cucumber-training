@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RUBY_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="childprocess (v0.5.2, PIK: Ruby-193-p429) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ffi (v1.5.0, PIK: Ruby-193-p429) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.7.7, PIK: Ruby-193-p429) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubyzip (v1.1.2, PIK: Ruby-193-p429) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v2.41.0, PIK: Ruby-193-p429) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="watir-webdriver (v0.6.8, PIK: Ruby-193-p429) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="websocket (v1.0.7, PIK: Ruby-193-p429) [gem]" level="application" />
+  </component>
+</module>
+

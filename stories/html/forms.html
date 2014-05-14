@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script type = "text/javascript">
+    function write_below(form)
+    {
+        var input = document.forms.write.user_name.value;
+        document.getElementById('write_here').innerHTML="Your username is: "+input;
+        return false;
+    }
+</script>
+
+<form name='write' onsubmit='return write_below(this);'>
+    User Name: <input type="text" id = "user_name"  name="user_name"><br>
+    <input id = 'submit_button' type="submit" value="submit">
+</form>
+<div id='write_here'></div></body>
+</body>
+</html>
